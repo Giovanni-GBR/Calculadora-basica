@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora basica</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <main class="calculadora">
+    <header class="calc-cabeca">
+      <input type="text" id="resultado" readonly>
+    </header>
+    <section class="butoes-calc">
+      <div class="linha-1 linhas">
+        <div><button value="1" onclick="bnt(this)">1</button></div>
+        <div><button value="2" onclick="bnt(this)">2</button></div>
+        <div><button value="3" onclick="bnt(this)">3</button></div>
+        <div><button value="+" onclick="bnt(this)">+</button></div>
+      </div>
+      <div class="linha-2 linhas">
+        <div><button value="4" onclick="bnt(this)">4</button></div>
+        <div><button value="5" onclick="bnt(this)">5</button></div>
+        <div><button value="6" onclick="bnt(this)">6</button></div>
+        <div><button value="-" onclick="bnt(this)">-</button></div>
+      </div>
+      <div class="linha-3 linhas">
+        <div><button value="7" onclick="bnt(this)">7</button></div>
+        <div><button value="8" onclick="bnt(this)">8</button></div>
+        <div><button value="9" onclick="bnt(this)">9</button></div>
+        <div><button value="*" onclick="bnt(this)">*</button></div>
+      </div>
+      <div class="linha-4 linhas">
+        <div><button value="" onclick="Apagar()">e</button></div>
+        <div><button value="0" onclick="bnt(this)">0</button></div>
+        <div><button value="/" onclick="bnt(this)">/</button></div>
+        <div><button value="" onclick="Resposta()" class="resp">=</button></div>
+      </div>
+    </section>
+  </main>
+  <script defer type="text/javascript" src="/main.js"></script>
+</body>
+</html>
